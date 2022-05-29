@@ -85,7 +85,7 @@ driver.execute_script("arguments[0].click();", email_only)
 
 email_address = driver.find_element(By.XPATH, '/html/body/div[1]/main/div[2]/div[2]/form/div/div[4]/'
                                               'div[2]/div[1]/input')
-email_address.send_keys('fabriziofabrizio@mail.com')
+email_address.send_keys('email')
 time.sleep(1)
 
 
@@ -148,9 +148,9 @@ def vmail():
     enter_email = WebDriverWait(driver, 5).until(ec.presence_of_element_located((By.XPATH, '/html/body/div/div/div[1]/'
                                                                                            'div/div/div/div[2]/form/'
                                                                                            'div[1]/input')))
-    enter_email.send_keys('fabriziofabrizio@mail.com')
+    enter_email.send_keys('email')
     password = driver.find_element(By.XPATH, '/html/body/div/div/div[1]/div/div/div/div[2]/form/div[2]/input')
-    password.send_keys('gobot@123')
+    password.send_keys('password')
     enter = driver.find_element(By.XPATH, '/html/body/div/div/div[1]/div/div/div/div[2]/form/button')
     enter.click()
     time.sleep(3)
