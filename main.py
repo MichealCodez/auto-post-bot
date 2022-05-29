@@ -9,7 +9,7 @@ import time
 
 
 def solve_captcha(url):
-    api_key = os.getenv('APIKEY_2CAPTCHA', '04bce18c0f73825364029844f6ecdd67')
+    api_key = os.getenv('APIKEY_2CAPTCHA', 'your api key')
 
     solver = TwoCaptcha(api_key)
 
