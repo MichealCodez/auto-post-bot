@@ -15,7 +15,7 @@ def solve_captcha(url):
 
     try:
         result = solver.hcaptcha(
-            sitekey='1dcf45a9-7c48-49f8-ba65-febc3f08d43f',
+            sitekey='the website\'s sitekey',
             url=f'{url}',
         )
 
